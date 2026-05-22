@@ -73,14 +73,14 @@ button {
     &-red {
         background: var(--boss-red);
         box-shadow: 
-            0 10px 30px rgba(158, 23, 20, 0.4),
+            0 4px 30px rgba(158, 23, 20, 0.4),
             inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
         &:hover {
             background: var(--deep-red);
             transform: translateY(-3px);
             box-shadow: 
-                0 15px 40px rgba(158, 23, 20, 0.6),
+                0 8px 40px rgba(158, 23, 20, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
     }
@@ -88,13 +88,13 @@ button {
     &-orange {
         background: var(--hot-orange);
         box-shadow: 
-            0 10px 30px rgba(255, 159, 28, 0.4),
+            0 4px 30px rgba(255, 159, 28, 0.4),
             inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
         &:hover {
             transform: translateY(-3px);
             box-shadow: 
-                0 15px 40px rgba(255, 159, 28, 0.6),
+                0 8px 40px rgba(255, 159, 28, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
     }
@@ -464,6 +464,42 @@ body.hidden {
 
         &:hover {
             background: var(--boss-red);
+        }
+    }
+}
+
+.often {
+    margin-top: 32px;
+
+    &__row {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    &__title {
+        gap: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__top {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        & span {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--white);
         }
     }
 }
