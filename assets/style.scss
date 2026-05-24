@@ -563,7 +563,7 @@ body.hidden {
     }
 
     &__text {
-        font-family: var(--second-family);
+        font-family: var(--font-family);
         font-weight: 400;
         font-size: 16px;
         color: var(--white);
@@ -586,7 +586,7 @@ body.hidden {
 
     &__button {
         min-width: 0;
-        padding: 7px 24px;
+        padding: 9.5px 24px;
 
         & span {
             font-family: var(--second-family);
@@ -629,7 +629,7 @@ body.hidden {
         display: flex;
         flex-direction: column;
         overflow-y: scroll;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
         scrollbar-width: thin;
         padding-right: 10px;
         scrollbar-color: rgba(225, 43, 25, 0.5) transparent;
@@ -638,12 +638,12 @@ body.hidden {
     &__persona {
         display: flex;
         gap: 20px;
-        padding: 10px 0;
+        padding: 8px 0;
     }
 
     &__content {
         max-width: 426px;
-        padding: 32px 16px 16px 16px;
+        padding: 24px 16px;
         display: flex;
         flex-direction: column;
 
@@ -652,19 +652,19 @@ body.hidden {
             font-weight: 400;
             font-size: 16px;
             color: var(--white);
+            margin-bottom: 8px;
 
             &-light {
                 opacity: 0.56;
-                margin-bottom: 5px;
+                margin: 8px 0;
             }
         }
 
         &-sizes {
             display: flex;
-            margin-top: 5px;
+            margin-top: 8px;
             border: 1px solid var(--deep-red);
             border-radius: 8px;
-            border-radius: 10px;
             padding: 4px;
             gap: 5px;
             justify-content: space-between;
@@ -679,7 +679,7 @@ body.hidden {
 
         &-extra {
             display: flex;
-            margin-top: 5px;
+            margin-top: 8px;
             gap: 5px;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -714,10 +714,9 @@ body.hidden {
 
     &__option {
         display: flex;
-        margin-top: 5px;
+        margin-top: 8px;
         border: 1px solid var(--deep-red);
         border-radius: 8px;
-        border-radius: 10px;
         padding: 4px;
         gap: 5px;
         justify-content: space-between;
