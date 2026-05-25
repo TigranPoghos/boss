@@ -28,4 +28,49 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+    let promoSwiper = null;
+    function initPromoSwiper() {
+        const slider = document.querySelector('.mySwiper');
+        if (!slider) return;
+        if (window.innerWidth <= 1024 && !promoSwiper) {
+            promoSwiper = new Swiper(slider, {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+
+                navigation: {
+                    nextEl: '.js-promo-next',
+                    prevEl: '.js-promo-prev',
+                },
+            });
+        }
+        if (window.innerWidth > 1024 && promoSwiper) {
+            promoSwiper.destroy(true, true);
+            promoSwiper = null;
+        }
+    }
+    initPromoSwiper();
+    window.addEventListener('resize', initPromoSwiper);
+
+
+
+
+
+
+    const header = document.querySelector('.header');
+    if (!header) return;
+    function toggleHeaderScroll() {
+        if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+    toggleHeaderScroll();
+    window.addEventListener('scroll', toggleHeaderScroll);
+
+
+
+
+
 })
