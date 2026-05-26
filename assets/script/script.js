@@ -37,15 +37,24 @@ document.addEventListener("DOMContentLoaded", function(){
             promoSwiper = new Swiper(slider, {
                 slidesPerView: 'auto',
                 spaceBetween: 16,
-
                 navigation: {
                     nextEl: '.js-promo-next',
                     prevEl: '.js-promo-prev',
                 },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    577: {
+                        slidesPerView: 'auto',
+                    }
+                }
             });
         }
         if (window.innerWidth > 1024 && promoSwiper) {
+
             promoSwiper.destroy(true, true);
+
             promoSwiper = null;
         }
     }
