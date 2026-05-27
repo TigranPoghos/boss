@@ -265,10 +265,10 @@ body.hidden {
     left: 0;
     top: 0;
     backdrop-filter: blur(3px);
-}
 
-.opacite.active {
-    display: block;
+    &.active {
+        display: block;
+    }
 }
 
 .main {
@@ -291,7 +291,19 @@ body.hidden {
     backdrop-filter: blur(0);
 
     &__opacite {
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
         z-index: 9999;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(3px);
+
+        &.active {
+            display: block;
+        }
     }
 
     &.menu-open {

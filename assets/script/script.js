@@ -84,20 +84,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const burger = document.querySelector('.header__burger');
     const menu = document.querySelector('.burger');
-    const overlay = document.querySelector('.header__opacite');
+    const overlayheader = document.querySelector('.header__opacite');
     const body = document.body;
-    if (burger && menu && overlay && header) {
+    if (burger && menu && overlayheader && header) {
         const menuLinks = menu.querySelectorAll('a');
         function openMenu() {
             menu.classList.add('active');
-            overlay.classList.add('active');
+            overlayheader.classList.add('active');
             body.classList.add('hidden');
             burger.classList.add('active');
             header.classList.add('menu-open');
         }
         function closeMenu() {
             menu.classList.remove('active');
-            overlay.classList.remove('active');
+            overlayheader.classList.remove('active');
             body.classList.remove('hidden');
             burger.classList.remove('active');
             header.classList.remove('menu-open');

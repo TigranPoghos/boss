@@ -250,7 +250,6 @@ body.hidden {
   top: 0;
   backdrop-filter: blur(3px);
 }
-
 .opacite.active {
   display: block;
 }
@@ -273,7 +272,18 @@ body.hidden {
   backdrop-filter: blur(0);
 }
 .header__opacite {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   z-index: 9999;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(3px);
+}
+.header__opacite.active {
+  display: block;
 }
 .header.menu-open {
   background: var(--graphite-black);
