@@ -1663,6 +1663,10 @@ body.hidden {
         &__row {
             padding: 12px 0;
         }
+
+        &__logo {
+            max-width: 70px;
+        }
     }
 
     .filters {

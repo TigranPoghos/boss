@@ -1390,6 +1390,9 @@ body.hidden {
   .header__row {
     padding: 12px 0;
   }
+  .header__logo {
+    max-width: 70px;
+  }
   .filters {
     background: var(--dark-card);
   }
