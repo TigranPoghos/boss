@@ -1615,10 +1615,6 @@ body.hidden {
             padding: 0 10px 10px 10px;
             overflow: hidden;
 
-            &-add {
-                margin-top: 20px;
-            }
-
             &-sizes {
                 & button {
                     padding: 4px 8px;
@@ -1683,6 +1679,10 @@ body.hidden {
             & .text {
                 font-size: 14px;
             }
+        }
+
+        &__wrapper {
+            padding: 8px 0;
         }
 
         &__buttons {

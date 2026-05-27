@@ -1361,9 +1361,6 @@ body.hidden {
     padding: 0 10px 10px 10px;
     overflow: hidden;
   }
-  .card__content-add {
-    margin-top: 20px;
-  }
   .card__content-sizes button {
     padding: 4px 8px;
   }
@@ -1405,6 +1402,9 @@ body.hidden {
   }
   .filters__item .text {
     font-size: 14px;
+  }
+  .filters__wrapper {
+    padding: 8px 0;
   }
   .filters__buttons button svg {
     max-width: 20px;
