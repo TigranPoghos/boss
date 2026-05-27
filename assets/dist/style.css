@@ -1469,6 +1469,7 @@ body.hidden {
     position: absolute;
     right: 0;
     top: 0;
+    max-width: 120px;
   }
   .footer__bottom {
     margin: 12px 0;
