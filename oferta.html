@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">     
+        <div class="container">
+            <div class="header__row row">
+                <div class="header__logo">
+                    <a href="index.html"><img src="assets/image/logo.png" alt=""></a>
+                </div>
+                <ul class="header__menu decs">
+                    <li><a href="index.html#pizza" class="header__menu-item">Меню</a></li>
+                    <li><a href="action.html" class="header__menu-item">Акции</a></li>
+                    <li><a href="contact.html" class="header__menu-item">Контакты</a></li>
+                </ul>
+                <div class="header__contact">
+                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8677 4.94551C12.0014 5.10301 10.3027 6.03676 9.03816 7.05376C6.88941 8.77951 5.33016 11.205 4.56741 14.0085C4.28841 15.03 4.27716 15.1425 4.28166 16.695C4.29066 19.9845 5.19291 23.4653 7.08516 27.495C10.8292 35.478 18.4792 43.1213 26.5184 46.9148C30.2827 48.69 33.6847 49.617 36.8999 49.7408C38.8754 49.8173 40.4909 49.4595 42.4349 48.5145C45.2767 47.133 47.5469 44.7953 48.7552 42.0075C49.0252 41.3865 49.0747 41.1683 49.0769 40.5945C49.0829 40.2129 49.0336 39.8325 48.9307 39.465C48.5032 38.196 45.6794 35.3385 42.6194 33.0773C41.0152 31.8938 38.6842 30.2783 38.2904 30.078C37.6559 29.7799 36.9462 29.6803 36.2542 29.7923C35.2777 29.97 34.9177 30.2243 33.0592 32.0625L31.3312 33.7703L30.2219 33.192C26.0639 31.0185 23.0242 27.981 20.8237 23.8005L20.2297 22.6688L21.9509 20.9273C23.8657 18.99 24.0884 18.6548 24.2099 17.5433C24.2887 16.8255 24.2032 16.2675 23.9309 15.7298C23.5529 14.9828 20.8957 11.1938 19.7189 9.72001C18.2137 7.83901 15.8309 5.63176 14.8072 5.16601C14.192 4.9204 13.5222 4.84425 12.8677 4.94551ZM13.9837 10.1363C15.3179 11.3648 16.6027 12.9285 18.3982 15.516L19.4534 17.0348L17.7907 18.711C15.8017 20.7158 15.6464 20.961 15.5879 22.1918C15.5519 22.9838 15.5609 23.0378 15.9344 23.9738C17.0819 26.8538 19.4669 30.3795 21.7934 32.6295C24.0479 34.8075 26.9437 36.747 29.7359 37.9418C30.8182 38.4053 31.3739 38.5133 32.1524 38.4098C33.0749 38.2883 33.4754 38.007 35.2867 36.2115L36.9607 34.551L38.5379 35.6738C41.0332 37.4513 42.5159 38.6888 43.8704 40.122L44.4059 40.689L44.2507 40.977C43.9627 41.5125 43.2067 42.453 42.6374 42.9863C41.2019 44.3295 39.3434 45.1643 37.6087 45.2475C34.7849 45.3848 30.1499 43.9583 26.3249 41.7758C20.8979 38.682 15.3179 33.102 12.2242 27.675C10.0259 23.823 8.61741 19.233 8.75466 16.38C8.84466 14.5215 9.70416 12.7013 11.2004 11.196C11.9069 10.4873 13.0589 9.63001 13.3064 9.63001C13.3762 9.63001 13.6799 9.85726 13.9837 10.1363Z" fill="#E12B23" />
+                    </svg>
+                    <div class="header__contact-content">
+                        <a href="tel:716666">71-66-66</a>
+                        <p>c 9:00-23:00</p>
+                    </div>
+                </div>
+                <div class="header__line decs"></div>
+                <button type="button" class="button button-red shine-button basketJS decs">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.60007 2.58398C2.39106 2.68834 2.21927 2.85454 2.10807 3.05998C1.98807 3.28398 1.98807 3.71598 2.10807 3.93998C2.22307 4.15598 2.34007 4.25898 3.18707 4.89298C3.58607 5.19198 3.95907 5.49598 4.01407 5.56898C4.07007 5.64198 4.15107 5.83598 4.19607 6.00098C4.24007 6.16498 4.86307 8.84698 5.58007 11.96C6.62807 16.51 6.90807 17.671 7.00807 17.88C7.26807 18.419 7.85107 18.858 8.44007 18.959C8.62307 18.99 10.0511 19 13.2401 18.992L17.7801 18.98L17.9441 18.892C18.1341 18.79 18.3471 18.562 18.4251 18.374C18.4961 18.205 18.4961 17.795 18.4251 17.626C18.3199 17.4093 18.1524 17.2289 17.9441 17.108L17.7801 17.02L13.2911 17.009L8.80307 16.999L8.76307 16.849C8.64907 16.415 8.55007 15.917 8.57307 15.893C8.58807 15.879 10.2761 15.727 12.3241 15.556C14.3721 15.385 16.1231 15.234 16.2141 15.22C18.1651 14.917 19.8011 13.414 20.2811 11.484C20.3391 11.252 20.6681 8.76498 20.8551 7.14998C20.9141 6.63798 20.6771 5.99698 20.2811 5.60098C20.0171 5.33698 19.5851 5.10298 19.2451 5.03998C19.1071 5.01398 16.6781 4.99998 12.5051 4.99998H5.98007L5.84907 4.74698C5.60107 4.26598 5.34507 4.01198 4.39307 3.29698C3.90507 2.92998 3.44607 2.60498 3.37407 2.57498C3.20107 2.50298 2.77607 2.50698 2.60007 2.58398ZM18.8581 7.10998C18.8481 7.16998 18.7401 8.02098 18.6181 8.99998C18.4971 9.97898 18.3621 10.913 18.3181 11.074C18.1641 11.639 17.9071 12.055 17.4481 12.485C17.0176 12.8991 16.4662 13.165 15.8741 13.244C15.5811 13.288 8.11007 13.918 8.08907 13.901C8.08107 13.894 6.76007 8.20098 6.52207 7.14998L6.48907 6.99998H18.8781L18.8581 7.10998ZM8.64307 20.069C8.29107 20.193 8.00007 20.614 8.00007 21C8.00007 21.242 8.11907 21.521 8.29907 21.701C8.4072 21.81 8.53913 21.8924 8.68449 21.9418C8.82985 21.9911 8.98468 22.0062 9.13681 21.9856C9.28895 21.9651 9.43426 21.9095 9.56131 21.8234C9.68836 21.7372 9.79371 21.6227 9.86907 21.489C9.96407 21.328 9.98007 21.256 9.98007 21C9.98007 20.744 9.96407 20.672 9.86907 20.511C9.7504 20.3038 9.56192 20.1456 9.33732 20.0646C9.11271 19.9836 8.86663 19.9852 8.64307 20.069ZM15.6431 20.069C15.2911 20.193 15.0001 20.614 15.0001 21C15.0001 21.242 15.1191 21.521 15.2991 21.701C15.4072 21.81 15.5391 21.8924 15.6845 21.9418C15.8298 21.9911 15.9847 22.0062 16.1368 21.9856C16.289 21.9651 16.4343 21.9095 16.5613 21.8234C16.6884 21.7372 16.7937 21.6227 16.8691 21.489C16.9641 21.328 16.9801 21.256 16.9801 21C16.9801 20.744 16.9641 20.672 16.8691 20.511C16.7504 20.3038 16.5619 20.1456 16.3373 20.0646C16.1127 19.9836 15.8666 19.9852 15.6431 20.069Z" fill="white" />
+                    </svg>
+                    <span>Корзина</span>
+                </button>
+                <button class="header__burger mob">
+                    <svg class="header__burger-icon header__burger-icon--menu" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2119_50)">
+                            <path d="M1 1H23" stroke="#E12B23" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 9.78589H23" stroke="#E12B23" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 18.5715H23" stroke="#E12B23" stroke-width="2" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2119_50">
+                            <rect width="24" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                        </svg>
+                    <svg class="header__burger-icon header__burger-icon--close" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5 17.5L10.25 9.25002M10.25 9.25002L2 1M10.25 9.25002L18.5 1M10.25 9.25002L2 17.5" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="burger">
+                    <ul class="header__menu">
+                        <li><a href="index.html#pizza" class="header__menu-item">Меню</a></li>
+                        <li><a href="action.html" class="header__menu-item">Акции</a></li>
+                        <li><a href="contact.html" class="header__menu-item">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="policy">
+            <div class="container">
+                <div class="policy__row row">
+                    <h1 class="title">Публичная оферта</h1>
+
+                    <p>
+                        Настоящий документ является официальным предложением (публичной офертой) сайта 
+                        «Пицца Босс», расположенного по адресу 
+                        <a href="https://pizzaboss.ru">pizzaboss.ru</a>, 
+                        и содержит все существенные условия оказания услуг общественного питания и доставки.
+                    </p>
+
+                    <h2 class="subtitle">1. Общие положения</h2>
+
+                    <p>
+                        1.1. Индивидуальный предприниматель / юридическое лицо:
+                        ИП Каверина Ирина Юрьевна (далее — «Продавец») предлагает любому дееспособному лицу (далее — «Покупатель») заключить договор на условиях настоящей оферты.
+                    </p>
+
+                    <p>
+                        1.2. Оформление заказа на сайте означает полное и безоговорочное принятие (акцепт) настоящей оферты.
+                    </p>
+
+                    <p>
+                        1.3. Настоящая оферта действует до момента её отзыва Продавцом.
+                    </p>
+
+                    <h2 class="subtitle">2. Предмет договора</h2>
+
+                    <p>
+                        2.1. Продавец обязуется приготовить и передать Покупателю продукцию общественного питания (блюда, напитки), 
+                        а Покупатель обязуется оплатить и принять заказ.
+                    </p>
+
+                    <p>
+                        2.2. Перечень продукции, цены и условия доставки указаны на сайте.
+                    </p>
+
+                    <h2 class="subtitle">3. Оформление заказа</h2>
+
+                    <p>
+                        3.1. Заказ оформляется Покупателем самостоятельно через сайт.
+                    </p>
+
+                    <p>
+                        3.2. При оформлении заказа Покупатель обязан указать достоверные данные:
+                    </p>
+
+                    <ul>
+                        <li>имя;</li>
+                        <li>номер телефона;</li>
+                        <li>адрес доставки;</li>
+                        <li>иные необходимые данные.</li>
+                    </ul>
+
+                    <p>
+                        3.3. Продавец не несёт ответственности за некорректные данные, указанные Покупателем.
+                    </p>
+
+                    <h2 class="subtitle">4. Оплата заказа</h2>
+
+                    <p>
+                        4.1. Оплата осуществляется способами, доступными на сайте, включая онлайн-оплату.
+                    </p>
+
+                    <p>
+                        4.2. Онлайн-оплата осуществляется с использованием платёжных сервисов, включая ЮKassa.
+                    </p>
+
+                    <p>
+                        4.3. Моментом оплаты считается поступление денежных средств на расчётный счёт Продавца.
+                    </p>
+
+                    <h2 class="subtitle">5. Доставка</h2>
+
+                    <p>
+                        5.1. Доставка осуществляется по адресу, указанному Покупателем.
+                    </p>
+
+                    <p>
+                        5.2. Сроки доставки зависят от зоны доставки, загруженности кухни и других факторов.
+                    </p>
+
+                    <p>
+                        5.3. Продавец вправе отказать в доставке, если адрес находится вне зоны обслуживания.
+                    </p>
+
+                    <h2 class="subtitle">6. Возврат и отмена заказа</h2>
+
+                    <p>
+                        6.1. Покупатель вправе отказаться от заказа до момента его приготовления.
+                    </p>
+
+                    <p>
+                        6.2. В случае оплаты онлайн возврат денежных средств осуществляется тем же способом, которым была произведена оплата.
+                    </p>
+
+                    <p>
+                        6.3. Претензии по качеству продукции принимаются сразу после получения заказа.
+                    </p>
+
+                    <h2 class="subtitle">7. Ответственность сторон</h2>
+
+                    <p>
+                        7.1. Продавец не несёт ответственности за задержки, вызванные обстоятельствами, не зависящими от него.
+                    </p>
+
+                    <p>
+                        7.2. Покупатель несёт ответственность за достоверность предоставленных данных.
+                    </p>
+
+                    <h2 class="subtitle">8. Персональные данные</h2>
+
+                    <p>
+                        8.1. Оформляя заказ, Покупатель даёт согласие на обработку персональных данных в соответствии с Политикой конфиденциальности.
+                    </p>
+
+                    <p>
+                        8.2. Политика конфиденциальности размещена по адресу:
+                        <a href="https://pizzaboss.ru/policy">pizzaboss.ru/policy</a>
+                    </p>
+
+                    <h2 class="subtitle">9. Реквизиты продавца</h2>
+
+                    <p>
+                        Индивидуальный предприниматель / юридическое лицо: ИП Каверина Ирина Юрьевна
+                    </p>
+
+                    <p>
+                        ИНН: 462900801609
+                    </p>
+
+                    <p>
+                        ОГРНИП: 324460000017433
+                    </p>
+
+                    <p>
+                        Email: lelaykina_92@mail.ru
+                    </p>
+
+                    <p>
+                        Телефон: 71-66-66
+                    </p>
+
+                    <h2 class="subtitle">10. Заключительные положения</h2>
+
+                    <p>
+                        10.1. Продавец вправе вносить изменения в настоящую оферту без предварительного уведомления.
+                    </p>
+
+                    <p>
+                        10.2. Актуальная версия оферты размещена на сайте:
+                        <a href="https://pizzaboss.ru/oferta">pizzaboss.ru/oferta</a>
+                    </p>
+
+                    <p>
+                        10.3. Изображения товаров могут отличаться от фактического внешнего вида продукции.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="opacite header__opacite"></div>
+    <div class="opacite"></div>
+    <aside class="basket">
+        <div class="basket__top">
+            <h3 class="basket__title">Корзина</h3>
+            <button class="basket__close" type="button">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 13L7.00002 7.00002M7.00002 7.00002L1 1M7.00002 7.00002L13 1M7.00002 7.00002L1 13" stroke="#E12B23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="basket__menu">
+            <article class="basket__item">
+                <div class="basket__item-top">
+                    <div class="basket__item-image">
+                        <img src="assets/image/Партизан.webp" alt="">
+                    </div>
+                    <div class="basket__item-content">
+                        <h3 class="basket__subtitle">Че Гевара</h3>
+                        <p class="basket__text">40см, тонкое тесто, 1.5кг</p>
+                    </div>
+                </div>
+                <div class="basket__item-line"></div>
+                <div class="basket__item-bottom">
+                    <div class="basket__item-price">
+                        <span class="price-value">999</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="basket__counter">
+                        <button class="basket__counter-btn basket__counter-btn--minus" type="button">
+                            <svg width="15" height="1" viewBox="0 0 15 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.304688 0.304749H14.3225" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <span class="basket__counter-value">1</span>
+                        <button class="basket__counter-btn basket__counter-btn--plus" type="button">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2056_39)">
+                                    <path d="M7.61841 0.304749V14.3225" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                                    <path d="M14.3225 7.6214H0.304688" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2056_39">
+                                    <rect width="15" height="15" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="basket__item-close" aria-label="Удалить товар" type="button">
+                    <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49997 6.49997L3.5 3.5M3.5 3.5L0.5 0.5M3.5 3.5L6.5 0.5M3.5 3.5L0.5 6.5" stroke="#E12B23" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </article>
+        </div>
+        <button class="basket__clean" type="button"><span>Очистить корзину</span></button>
+        <div class="basket__result">
+            <div class="basket__result-price">
+                <div class="basket__result-text">Итого</div>
+                <div class="basket__result-price">
+                    <span class="price-value">3999</span>
+                    <span class="price-currency">₽</span>
+                </div>
+            </div>
+            <a class="basket__result-button button button-red shine-button" href="checkout.html"><span>К оформлению заказа</span></a>
+        </div>
+    </aside>
+    <article class="card">
+        <button class="card__close" type="button" aria-label="Закрыть">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2034_2)">
+                    <path d="M11.0002 0.430908L0.431152 10.9999" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                    <path d="M11.2238 11.0021L0.654785 0.432983" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_2034_2">
+                    <rect width="12" height="12" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+        <div class="card__img">
+            <img src="assets/image/Партизан.webp"
+                alt="Пепперони"
+                data-card-image>
+        </div>
+        <div class="card__content">
+            <h3 class="card__title title" data-card-title>Пепперони</h3>
+            <p class="card__content-info card__content-info-light" data-card-info>на 100 г: 300 ккал / 14 г белков / 16 г жиров / 22 г углеводов</p>
+            <div class="card__content-info" data-card-description>Пикантная пепперони, моцарелла, фирменный соус, томаты и орегано.</div>
+            <div class="card__persona" data-persona-counter style="display: none;">
+                <p class="text">Количество персон</p>
+                <div class="basket__counter">
+                    <button class="basket__counter-btn basket__counter-btn--minus" type="button">
+                        <svg width="15" height="1" viewBox="0 0 15 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.304688 0.304749H14.3225" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <span class="basket__counter-value">1</span>
+                    <button class="basket__counter-btn basket__counter-btn--plus" type="button">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2056_39)">
+                                <path d="M7.61841 0.304749V14.3225" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                                <path d="M14.3225 7.6214H0.304688" stroke="white" stroke-width="0.609467" stroke-linecap="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2056_39">
+                                <rect width="15" height="15" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__extra" data-card-options>
+                <div class="card__content-sizes option-group" data-option="size">
+                    <span class="option-highlight"></span>
+                    <button class="text active" type="button" aria-pressed="true" data-border-price="80" data-size="25" data-price="480">25см</button>
+                    <button class="text" type="button" aria-pressed="false" data-border-price="80" data-size="33" data-price="680">33см</button>
+                    <button class="text" type="button" aria-pressed="false" data-border-price="80" data-size="40" data-price="880">40см</button>
+                    <button class="text" type="button" aria-pressed="false" data-border-price="0" data-size="50" data-price="1080">50см</button>
+                </div>
+                <div class="card__content-extra option-group" data-option="extra" data-allow-empty="true">
+                    <span class="option-highlight"></span>
+                    <button class="text" data-extra="cheese-border" data-price="130" aria-pressed="false" type="button"><span>Сырный +130<span>₽</span></span></button>
+                    <button class="text" data-extra="sausage-border" data-price="130" aria-pressed="false" type="button"><span>Колбасный +130<span>₽</span></span></button>
+                </div>
+                <div class="card__option option-group" data-option="taste" data-allow-empty="true">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" data-taste="cheese" data-price="50">Сырный</button>
+                    <button class="text" type="button" data-taste="garlic" data-price="50">Чесночный</button>
+                    <button class="text" type="button" data-taste="bbq" data-price="50">Барбекю</button>
+                    <button class="text" type="button" data-taste="sweet-sour" data-price="50">Кисло-сладкий</button>
+                </div>
+                <div class="card__option option-group" data-option="volume">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" data-volume="0.5">0.5 л</button>
+                    <button class="text" type="button" data-volume="0.9">0.9 л</button>
+                    <button class="text" type="button" data-volume="1">1 л</button>
+                    <button class="text" type="button" data-volume="2">2 л</button>
+                </div>
+                <div class="card__option option-group" data-option="juice-taste">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" aria-pressed="false" data-taste="pineapple">Ананас</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="orange">Апельсин</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="cherry">Вишня</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="multifruit">Мультифрукт</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="apple">Яблоко</button>
+                </div>
+                <div class="card__option option-group" data-option="roll-extra">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" aria-pressed="false" data-taste="vasabi" data-price="50"><span>Доп. васаби +50<span>₽</span></span></button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="imbir" data-price="70"><span>Доп. имбирь +70<span>₽</span></span></button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="soeviy" data-price="100"><span>Доп. соевый соус +100<span>₽</span></span></button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="slivochniy" data-price="120"><span>Доп. сливочный соус +120<span>₽</span></span></button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="palochki" data-price="20"><span>Доп. палочки +20<span>₽</span></span></button>
+                </div>
+                <div class="card__option option-group" data-option="pizza-extra">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" aria-pressed="false" data-taste="paket" data-price="10"><span>Пакет под пиццу +10<span>₽</span></span></button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="product" data-price="150"><span>Доп. продукт (Указать в комментариях) +150<span>₽</span></span></button>
+                </div>
+            </div>
+            <button class="card__content-add button button-red shine-button" type="button">
+                <span>В корзину за</span>
+                <span data-card-price>649<span>₽</span></span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.60007 2.58404C2.39106 2.6884 2.21927 2.8546 2.10807 3.06004C1.98807 3.28404 1.98807 3.71604 2.10807 3.94004C2.22307 4.15604 2.34007 4.25904 3.18707 4.89304C3.58607 5.19204 3.95907 5.49604 4.01407 5.56904C4.07007 5.64204 4.15107 5.83604 4.19607 6.00104C4.24007 6.16504 4.86307 8.84704 5.58007 11.96C6.62807 16.51 6.90807 17.671 7.00807 17.88C7.26807 18.419 7.85107 18.858 8.44007 18.959C8.62307 18.99 10.0511 19 13.2401 18.992L17.7801 18.98L17.9441 18.892C18.1341 18.79 18.3471 18.562 18.4251 18.374C18.4961 18.205 18.4961 17.795 18.4251 17.626C18.3199 17.4093 18.1524 17.229 17.9441 17.108L17.7801 17.02L13.2911 17.009L8.80307 16.999L8.76307 16.849C8.64907 16.415 8.55007 15.917 8.57307 15.893C8.58807 15.879 10.2761 15.727 12.3241 15.556C14.3721 15.385 16.1231 15.234 16.2141 15.22C18.1651 14.917 19.8011 13.414 20.2811 11.484C20.3391 11.252 20.6681 8.76504 20.8551 7.15004C20.9141 6.63804 20.6771 5.99704 20.2811 5.60104C20.0171 5.33704 19.5851 5.10304 19.2451 5.04004C19.1071 5.01404 16.6781 5.00004 12.5051 5.00004H5.98007L5.84907 4.74704C5.60107 4.26604 5.34507 4.01204 4.39307 3.29704C3.90507 2.93004 3.44607 2.60504 3.37407 2.57504C3.20107 2.50304 2.77607 2.50704 2.60007 2.58404ZM18.8581 7.11004C18.8481 7.17004 18.7401 8.02104 18.6181 9.00004C18.4971 9.97904 18.3621 10.913 18.3181 11.074C18.1641 11.639 17.9071 12.055 17.4481 12.485C17.0176 12.8992 16.4662 13.1651 15.8741 13.244C15.5811 13.288 8.11007 13.918 8.08907 13.901C8.08107 13.894 6.76007 8.20104 6.52207 7.15004L6.48907 7.00004H18.8781L18.8581 7.11004ZM8.64307 20.069C8.29107 20.193 8.00007 20.614 8.00007 21C8.00007 21.242 8.11907 21.521 8.29907 21.701C8.4072 21.81 8.53913 21.8924 8.68449 21.9418C8.82985 21.9912 8.98468 22.0062 9.13681 21.9857C9.28895 21.9651 9.43426 21.9096 9.56131 21.8234C9.68836 21.7372 9.79371 21.6228 9.86907 21.489C9.96407 21.328 9.98007 21.256 9.98007 21C9.98007 20.744 9.96407 20.672 9.86907 20.511C9.7504 20.3039 9.56192 20.1457 9.33732 20.0647C9.11271 19.9837 8.86663 19.9852 8.64307 20.069ZM15.6431 20.069C15.2911 20.193 15.0001 20.614 15.0001 21C15.0001 21.242 15.1191 21.521 15.2991 21.701C15.4072 21.81 15.5391 21.8924 15.6845 21.9418C15.8298 21.9912 15.9847 22.0062 16.1368 21.9857C16.289 21.9651 16.4343 21.9096 16.5613 21.8234C16.6884 21.7372 16.7937 21.6228 16.8691 21.489C16.9641 21.328 16.9801 21.256 16.9801 21C16.9801 20.744 16.9641 20.672 16.8691 20.511C16.7504 20.3039 16.5619 20.1457 16.3373 20.0647C16.1127 19.9837 15.8666 19.9852 15.6431 20.069Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </article>
+    <div class="basket__button basketJS mob">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.582 2.58392C2.37299 2.68827 2.20121 2.85448 2.09 3.05992C1.97 3.28392 1.97 3.71592 2.09 3.93992C2.205 4.15592 2.322 4.25892 3.169 4.89292C3.568 5.19192 3.941 5.49592 3.996 5.56892C4.052 5.64192 4.133 5.83592 4.178 6.00092C4.222 6.16492 4.845 8.84692 5.562 11.9599C6.61 16.5099 6.89 17.6709 6.99 17.8799C7.25 18.4189 7.833 18.8579 8.422 18.9589C8.605 18.9899 10.033 18.9999 13.222 18.9919L17.762 18.9799L17.926 18.8919C18.116 18.7899 18.329 18.5619 18.407 18.3739C18.478 18.2049 18.478 17.7949 18.407 17.6259C18.3018 17.4092 18.1343 17.2289 17.926 17.1079L17.762 17.0199L13.273 17.0089L8.785 16.9989L8.745 16.8489C8.631 16.4149 8.532 15.9169 8.555 15.8929C8.57 15.8789 10.258 15.7269 12.306 15.5559C14.354 15.3849 16.105 15.2339 16.196 15.2199C18.147 14.9169 19.783 13.4139 20.263 11.4839C20.321 11.2519 20.65 8.76492 20.837 7.14992C20.896 6.63792 20.659 5.99692 20.263 5.60092C19.999 5.33692 19.567 5.10292 19.227 5.03992C19.089 5.01392 16.66 4.99992 12.487 4.99992H5.962L5.831 4.74692C5.583 4.26592 5.327 4.01192 4.375 3.29692C3.887 2.92992 3.428 2.60492 3.356 2.57492C3.183 2.50292 2.758 2.50692 2.582 2.58392ZM18.84 7.10992C18.83 7.16992 18.722 8.02092 18.6 8.99992C18.479 9.97892 18.344 10.9129 18.3 11.0739C18.146 11.6389 17.889 12.0549 17.43 12.4849C16.9995 12.8991 16.4481 13.165 15.856 13.2439C15.563 13.2879 8.092 13.9179 8.071 13.9009C8.063 13.8939 6.742 8.20092 6.504 7.14992L6.471 6.99992H18.86L18.84 7.10992ZM8.625 20.0689C8.273 20.1929 7.982 20.6139 7.982 20.9999C7.982 21.2419 8.101 21.5209 8.281 21.7009C8.38913 21.8099 8.52106 21.8923 8.66642 21.9417C8.81178 21.9911 8.96661 22.0061 9.11875 21.9855C9.27089 21.965 9.41619 21.9095 9.54324 21.8233C9.6703 21.7371 9.77564 21.6227 9.851 21.4889C9.946 21.3279 9.962 21.2559 9.962 20.9999C9.962 20.7439 9.946 20.6719 9.851 20.5109C9.73233 20.3037 9.54385 20.1455 9.31925 20.0646C9.09465 19.9836 8.84857 19.9851 8.625 20.0689ZM15.625 20.0689C15.273 20.1929 14.982 20.6139 14.982 20.9999C14.982 21.2419 15.101 21.5209 15.281 21.7009C15.3891 21.8099 15.5211 21.8923 15.6664 21.9417C15.8118 21.9911 15.9666 22.0061 16.1187 21.9855C16.2709 21.965 16.4162 21.9095 16.5432 21.8233C16.6703 21.7371 16.7756 21.6227 16.851 21.4889C16.946 21.3279 16.962 21.2559 16.962 20.9999C16.962 20.7439 16.946 20.6719 16.851 20.5109C16.7323 20.3037 16.5438 20.1455 16.3192 20.0646C16.0946 19.9836 15.8486 19.9851 15.625 20.0689Z" fill="white" />
+        </svg>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row row">
+                <div class="footer__top">
+                    <div class="footer__left">
+                        <ul class="footer__menu">
+                            <li><a href="/" class="text">Меню</a></li>
+                            <li><a href="promo.html" class="text">Акции</a></li>
+                            <li><a href="contact.html" class="text">Контакты</a></li>
+                        </ul>
+                        <div class="footer__middle">
+                            <div class="header__contact">
+                                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8677 4.94551C12.0014 5.10301 10.3027 6.03676 9.03816 7.05376C6.88941 8.77951 5.33016 11.205 4.56741 14.0085C4.28841 15.03 4.27716 15.1425 4.28166 16.695C4.29066 19.9845 5.19291 23.4653 7.08516 27.495C10.8292 35.478 18.4792 43.1213 26.5184 46.9148C30.2827 48.69 33.6847 49.617 36.8999 49.7408C38.8754 49.8173 40.4909 49.4595 42.4349 48.5145C45.2767 47.133 47.5469 44.7953 48.7552 42.0075C49.0252 41.3865 49.0747 41.1683 49.0769 40.5945C49.0829 40.2129 49.0336 39.8325 48.9307 39.465C48.5032 38.196 45.6794 35.3385 42.6194 33.0773C41.0152 31.8938 38.6842 30.2783 38.2904 30.078C37.6559 29.7799 36.9462 29.6803 36.2542 29.7923C35.2777 29.97 34.9177 30.2243 33.0592 32.0625L31.3312 33.7703L30.2219 33.192C26.0639 31.0185 23.0242 27.981 20.8237 23.8005L20.2297 22.6688L21.9509 20.9273C23.8657 18.99 24.0884 18.6548 24.2099 17.5433C24.2887 16.8255 24.2032 16.2675 23.9309 15.7298C23.5529 14.9828 20.8957 11.1938 19.7189 9.72001C18.2137 7.83901 15.8309 5.63176 14.8072 5.16601C14.192 4.9204 13.5222 4.84425 12.8677 4.94551ZM13.9837 10.1363C15.3179 11.3648 16.6027 12.9285 18.3982 15.516L19.4534 17.0348L17.7907 18.711C15.8017 20.7158 15.6464 20.961 15.5879 22.1918C15.5519 22.9838 15.5609 23.0378 15.9344 23.9738C17.0819 26.8538 19.4669 30.3795 21.7934 32.6295C24.0479 34.8075 26.9437 36.747 29.7359 37.9418C30.8182 38.4053 31.3739 38.5133 32.1524 38.4098C33.0749 38.2883 33.4754 38.007 35.2867 36.2115L36.9607 34.551L38.5379 35.6738C41.0332 37.4513 42.5159 38.6888 43.8704 40.122L44.4059 40.689L44.2507 40.977C43.9627 41.5125 43.2067 42.453 42.6374 42.9863C41.2019 44.3295 39.3434 45.1643 37.6087 45.2475C34.7849 45.3848 30.1499 43.9583 26.3249 41.7758C20.8979 38.682 15.3179 33.102 12.2242 27.675C10.0259 23.823 8.61741 19.233 8.75466 16.38C8.84466 14.5215 9.70416 12.7013 11.2004 11.196C11.9069 10.4873 13.0589 9.63001 13.3064 9.63001C13.3762 9.63001 13.6799 9.85726 13.9837 10.1363Z" fill="#E12B23" />
+                                </svg>
+                                <div class="header__contact-content">
+                                    <a href="tel:716666">71-66-66</a>
+                                    <p>c 9:00-23:00</p>
+                                </div>
+                            </div>
+                            <div class="header__contact">
+                                <svg width="57" height="44" viewBox="0 0 57 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.7 44C4.1325 44 2.7911 43.4619 1.6758 42.3857C0.5586 41.3078 0 40.0125 0 38.5V5.5C0 3.9875 0.5586 2.69317 1.6758 1.617C2.7911 0.539 4.1325 0 5.7 0H51.3C52.8675 0 54.2099 0.539 55.327 1.617C56.4423 2.69317 57 3.9875 57 5.5V38.5C57 40.0125 56.4423 41.3078 55.327 42.3857C54.2099 43.4619 52.8675 44 51.3 44H5.7ZM5.7 11V22H51.3V11H5.7Z" fill="#E12B23" />
+                                </svg>
+                                <div class="header__contact-content">
+                                    <p>Мы принимаем <br>оплату картой</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/" class="footer__right">
+                        <img src="assets/image/footer__logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__address">
+                    <span>г. Курск</span>
+                    <button class="open-map" data-address="Липецк, ул. Петра Смородина 5А"><span>ул. Петра Смородина д. 5А</span></button>
+                    <button class="open-map" data-address="Липецк, ул. Интернациональная 42"><span>ул. Интернациональная д. 42</span></button>
+                    <button class="open-map" data-address="Липецк, ул. Артёмова 3а"><span>ул. Артёмова 3а</span></button>
+                </div>
+                <div class="footer__bottom">
+                    <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3A0c40550a95135dbb55f8499a0515f271c6d291131313cdf6bad8aaa1d173c847" frameborder="0" allowfullscreen="true" width="100%" height="458px" style="display: block;"></iframe>
+                </div>
+                <div class="footer__line"></div>
+                <ul class="footer__menu footer__menu-second">
+                    <li><p class="text">ИП Каверин Сергей Николаевич</p></li>
+                    <li><p class="text">ИНН 462900801609</p></li>
+                    <li><p class="text">ОГРНИП 324460000046531</p></li>
+                    <li class="footer__menu-right"><a class="text" href="policy.html">Политика</a></li>
+                    <li><a class="text" href="oferta.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/basket.js"></script>
+    <script src="assets/script/filters.js"></script>
+    <script src="assets/script/card.js"></script>
+</body>
+</html>
