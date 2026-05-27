@@ -290,6 +290,14 @@ body.hidden {
     background: transparent;
     backdrop-filter: blur(0);
 
+    &__opacite {
+        z-index: 9999;
+    }
+
+    &.menu-open {
+        background: var(--graphite-black);
+    }
+
     &.scrolled {
         background: rgba(24, 28, 32, 0.3);
         backdrop-filter: blur(20px);
@@ -357,6 +365,67 @@ body.hidden {
         width: 1px;
         background: var(--white);
         margin: 0 16px;
+    }
+
+    &__burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        height: 44px;
+        width: 44px;
+        border: 1px solid var(--soft-border);
+        border-radius: 6px;
+        background: var(--charcoal);
+        margin-left: 20px;
+
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+
+            &--menu {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+            &--close {
+                transform: translate(200%, -50%);
+                opacity: 0;
+            }
+        }
+
+        &.active .header__burger-icon--menu {
+            transform: translate(-250%, -50%);
+            opacity: 0;
+        }
+
+        &.active .header__burger-icon--close {
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+    }
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 16px 20px 32px 0;
+    background: var(--graphite-black);
+
+    & .header {
+        &__menu {
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -1182,6 +1251,31 @@ body.hidden {
     }
 }
 
+.action {
+    background: url('../image/action__back.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__row {
+        gap: 24px;
+        flex-direction: column;
+        padding-top: 180px;
+        padding-bottom: 24px;
+
+        & h3 {
+            color: var(--muted-gray);
+        }
+    }
+}
+
+.contact {
+    background: url('../image/contact__back.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .mob {
     display: none;
 }
@@ -1309,6 +1403,18 @@ body.hidden {
         &__item {
             width: auto !important;
         }
+
+        &__page {
+            & .promo {
+                &__wrapper {
+                    flex-wrap: wrap;
+                }
+
+                &__item {
+                    width: calc(50% - 8px) !important;
+                }
+            }
+        }
     }
     
     .footer {
@@ -1345,6 +1451,12 @@ body.hidden {
             max-width: 300px;
             display: flex;
             align-items: center;
+        }
+    }
+
+    .action {
+        &__row {
+            padding-top: 120px;
         }
     }
 }
@@ -1405,6 +1517,19 @@ body.hidden {
 
         &__buttons {
             margin-top: 0;
+        }
+
+        &__page {
+            & .promo {
+                &__wrapper {
+                    gap: 8px;
+                }
+
+                &__item {
+                    width: calc(50% - 4px) !important;
+                    height: 250px !important;
+                }
+            }
         }
     }
 
@@ -1517,6 +1642,12 @@ body.hidden {
             }
         }
     }
+
+    .burger {
+        &.active {
+            display: flex;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -1531,10 +1662,6 @@ body.hidden {
     .header {
         &__row {
             padding: 12px 0;
-        }
-
-        &__logo {
-            max-width: 70px;
         }
     }
 
@@ -1564,6 +1691,15 @@ body.hidden {
     .promo {
         &__item {
             width: 100% !important;
+        }
+
+        &__page {
+            & .promo {
+                &__item {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
         }
     }
 

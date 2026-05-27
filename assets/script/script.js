@@ -82,4 +82,54 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+    const burger = document.querySelector('.header__burger');
+    const menu = document.querySelector('.burger');
+    const overlay = document.querySelector('.header__opacite');
+    const body = document.body;
+    if (burger && menu && overlay && header) {
+        const menuLinks = menu.querySelectorAll('a');
+        function openMenu() {
+            menu.classList.add('active');
+            overlay.classList.add('active');
+            body.classList.add('hidden');
+            burger.classList.add('active');
+            header.classList.add('menu-open');
+        }
+        function closeMenu() {
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('hidden');
+            burger.classList.remove('active');
+            header.classList.remove('menu-open');
+        }
+        burger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (menu.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+        document.addEventListener('click', (e) => {
+            const clickInsideMenu = menu.contains(e.target);
+            const clickOnBurger = burger.contains(e.target);
+            if (
+                menu.classList.contains('active') &&
+                !clickInsideMenu &&
+                !clickOnBurger
+            ) {
+                closeMenu();
+            }
+        });
+        menuLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+    }
+
+
+
+
+
 })
