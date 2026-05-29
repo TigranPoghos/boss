@@ -414,7 +414,7 @@ body.hidden {
   transform: translateX(-50%);
   position: relative;
   height: 1px;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 .footer__top {
   display: flex;
@@ -432,7 +432,7 @@ body.hidden {
 }
 .footer__bottom {
   border-radius: 8px;
-  margin: 24px 0 48px 0;
+  margin: 24px 0;
 }
 .footer__bottom iframe {
   border-radius: 8px;
@@ -1152,6 +1152,61 @@ body.hidden {
   background-repeat: no-repeat;
 }
 
+.social {
+  margin: 48px 0;
+}
+.social__row {
+  align-items: center;
+}
+.social__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+.social__content .text {
+  margin-top: 6px;
+}
+.social__content .text span {
+  color: var(--boss-red);
+}
+.social__right {
+  margin-left: auto;
+}
+
+.delivery {
+  margin-bottom: 96px;
+}
+.delivery__row {
+  flex-direction: column;
+}
+.delivery .footer__bottom {
+  margin: 0;
+}
+.delivery__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+.delivery__item {
+  width: calc(33% - 11px);
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--dark-card);
+}
+.delivery__address {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.delivery__address-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .mob {
   display: none;
 }
@@ -1276,6 +1331,12 @@ body.hidden {
   }
   .policy {
     padding-top: 120px;
+  }
+  .delivery__item {
+    width: calc(50% - 8px);
+  }
+  .delivery__item:first-child {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -1410,6 +1471,18 @@ body.hidden {
   .burger.active {
     display: flex;
   }
+  .delivery {
+    margin-bottom: 48px;
+  }
+  .social {
+    margin: 24px 0;
+  }
+  .social__left {
+    max-width: 80px;
+  }
+  .social__right {
+    max-width: 70px;
+  }
 }
 @media (max-width: 576px) {
   h1 {
@@ -1525,5 +1598,11 @@ body.hidden {
   }
   .policy p, .policy a, .policy span, .policy li {
     margin-top: 4px;
+  }
+  .delivery__wrapper {
+    flex-direction: column;
+  }
+  .delivery__item {
+    width: 100%;
   }
 }

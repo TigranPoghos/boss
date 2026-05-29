@@ -458,7 +458,7 @@ body.hidden {
         transform: translateX(-50%);
         position: relative;
         height: 1px;
-        margin-bottom: 24px;
+        margin: 24px 0;
     }
 
     &__top {
@@ -480,7 +480,7 @@ body.hidden {
 
     &__bottom {
         border-radius: 8px;
-        margin: 24px 0 48px 0;
+        margin: 24px 0;
 
         & iframe {
             border-radius: 8px;
@@ -1313,6 +1313,74 @@ body.hidden {
     background-repeat: no-repeat;
 }
 
+.social {
+    margin: 48px 0;
+
+    &__row {
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+
+        & .text {
+            margin-top: 6px;
+
+            & span {
+                color: var(--boss-red);
+            }
+        }
+    }
+
+    &__right {
+        margin-left: auto;
+    }
+}
+
+.delivery {
+    margin-bottom: 96px;
+
+    &__row {
+        flex-direction: column;
+    }
+
+    & .footer {
+        &__bottom {
+            margin: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    &__item {
+        width: calc(33% - 11px);
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        padding: 24px;
+        background: var(--dark-card);
+    }
+
+    &__address {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
+
 .mob {
     display: none;
 }
@@ -1500,6 +1568,16 @@ body.hidden {
     .policy {
         padding-top: 120px;
     }
+
+    .delivery {
+        &__item {
+            width: calc(50% - 8px);
+
+            &:first-child {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1685,6 +1763,22 @@ body.hidden {
             display: flex;
         }
     }
+    
+    .delivery {
+        margin-bottom: 48px;
+    }
+
+    .social {
+        margin: 24px 0;
+
+        &__left {
+            max-width: 80px;
+        }
+
+        &__right {
+            max-width: 70px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -1847,6 +1941,16 @@ body.hidden {
 
         & p, a, span, li {
             margin-top: 4px;
+        }
+    }
+
+    .delivery {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
         }
     }
 }
