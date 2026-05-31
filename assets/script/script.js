@@ -161,4 +161,30 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+
+
+
+
+    const cubaCookieModal = document.querySelector('.modal');
+    const cubaCookieButton = document.querySelector('.modal__button');
+    if (!cubaCookieModal || !cubaCookieButton) {
+        return;
+    }
+    const CUBA_COOKIE_STORAGE_KEY = 'cuba_cookie_accept_date';
+    const cubaTodayDate = new Date().toISOString().slice(0, 10);
+    const cubaSavedDate = localStorage.getItem(CUBA_COOKIE_STORAGE_KEY);
+    if (cubaSavedDate !== cubaTodayDate) {
+        cubaCookieModal.classList.add('active');
+    }
+    cubaCookieButton.addEventListener('click', function () {
+        cubaCookieModal.classList.remove('active');
+        localStorage.setItem(
+            CUBA_COOKIE_STORAGE_KEY,
+            cubaTodayDate
+        );
+    });
+
+
+
 })

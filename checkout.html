@@ -110,7 +110,7 @@
                             <div class="form__delivery">
                                 <h3 class="subtitle">3. АДРЕС ДОСТАВКИ</h3>
                                 <div class="form__address">
-                                    <input type="text" id="address-input" name="address" placeholder="Адрес" required="required">
+                                    <input type="text" id="address-input" name="address" placeholder="Улица" required="required">
                                     <input type="text" name="house" placeholder="Дом" required="required">
                                     <div class="form__address-extra">
                                         <input type="text" name="entrance" placeholder="Подъезд">
@@ -150,8 +150,49 @@
                                 placeholder="Комментарий к заказу (не обязательно)"
                             ></textarea>
                         </div>
-                        <div class="form__right">
-
+                        <div class="form__order">
+                            <h3 class="subtitle">Ваш заказ</h3>
+                            <ul>
+                                <li>
+                                    <div class="form__order-left">
+                                        <p class="form__order-title text">
+                                            <span>Дон-Бекон</span>
+                                            <span>x</span>
+                                            <span>1 шт.</span>
+                                        </p>
+                                        <p class="text form__order-about">33см, Традиционное</p>
+                                    </div>
+                                    <strong class="form__order-price subtitle">
+                                        <span>999</span><span>₽</span>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <p class="text">Доставка</p>
+                                    <strong class="form__order-price subtitle">
+                                        <span>0</span><span>₽</span>
+                                    </strong>
+                                </li>
+                            </ul>   
+                            <div class="form__order-line form__order-line-top"></div>
+                            <div class="form__order-result">
+                                <h3 class="subtitle">Итого</h3>
+                                <strong class="form__order-price subtitle">
+                                    <span>799</span><span>₽</span>
+                                </strong>
+                            </div>
+                            <div class="form__order-line"></div>
+                            <label class="form__agree">
+                                <input type="checkbox" name="agree">
+                                <span class="form__agree-box"></span>
+                                <span class="form__agree-text text">
+                                    Я согласен с 
+                                    <a href="/policy" target="_blank">политикой конфиденциальности</a> 
+                                    и 
+                                    <a href="/oferta" target="_blank">офертой</a>
+                                </span>
+                            </label>
+                            <button class="form__button button button-red shine-button" type="submit"><span class="text">Оформить заказ</span></button>
+                            <a class="form__other" href="index.html">Изменить заказ</a>
                         </div>
                     </form>
                 </div>

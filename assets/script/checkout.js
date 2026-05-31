@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const pickupDiscount = getPickupDiscount(cart);
         const total = Math.max(0, subtotal + deliveryPrice - pickupDiscount);
 
-        const totalWrapper = document.querySelector('.form__order > .form__order-price');
+        const totalWrapper = document.querySelector('.form__order > .form__order-result');
         if (!totalWrapper) return;
 
         const totalStrong = totalWrapper.querySelector('strong');
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </p>
                         ${infoText ? `<p class="text form__order-about">${infoText}</p>` : ''}
                     </div>
-                    <strong class="form__order-price text">
+                    <strong class="form__order-price subtitle">
                         <span>${formatPrice(itemTotal)}</span><span>₽</span>
                     </strong>
                 </li>
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const deliveryHtml = `
             <li>
                 <p class="text">Доставка</p>
-                <strong class="form__order-price text">
+                <strong class="form__order-price subtitle">
                     <span>${formatPrice(deliveryPrice)}</span><span>₽</span>
                 </strong>
             </li>
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ? `
             <li>
                 <p class="text">Скидка за самовывоз</p>
-                <strong class="form__order-price text">
+                <strong class="form__order-price subtitle">
                     <span>-${formatPrice(pickupDiscount)}</span><span>₽</span>
                 </strong>
             </li>
